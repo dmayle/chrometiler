@@ -1,0 +1,45 @@
+{
+  "name": "chrometiler",
+  "author": "Douglas Mayle",
+  "version": "1.0.0",
+  "description": "Chrome extension for tab manipulation in a tiling window manager",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "commands": {
+    "detach-tab": {
+      "description": "Detach tab from browser window"
+    },
+    "attach-right": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Attach tab to the browser window to the right"
+    },
+    "attach-left": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H"
+      },
+      "description": "Attach tab to the browser window to the left"
+    },
+    "attach-up": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K"
+      },
+      "description": "Attach tab to the browser window above"
+    },
+    "attach-down": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J"
+      },
+      "description": "Attach tab to the browser window below"
+    }
+  },
+  "permissions": [
+    "system.display",
+    "storage",
+    "tabs"
+  ],
+  "manifest_version": 2
+}
